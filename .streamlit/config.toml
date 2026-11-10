@@ -1,0 +1,19 @@
+[server]
+# 업로드 칸 자체의 상한(MB). 실제 제한(10MB)은 app.py에서 검사해 한국어로 안내하므로
+# 여기서는 그보다 크게 둔다. (Streamlit 기본 안내는 영어로만 나온다)
+maxUploadSize = 50
+
+[client]
+# 예상하지 못한 오류가 나도 사용자 화면에 스택트레이스를 보여주지 않는다.
+showErrorDetails = "none"
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "dark"
+primaryColor = "#b3312a"
+backgroundColor = "#0f0d0b"
+secondaryBackgroundColor = "#1c1814"
+textColor = "#e8dcc4"
+font = "serif"
